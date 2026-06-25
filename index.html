@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panvi Chronicles – Roads • Stories • Adventures</title>
+  <meta name="description" content="Panvi Chronicles – A luxury travel blog by a passionate couple from Kerala exploring hidden gems, road trips, and unforgettable adventures across India." />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVBAR
+  ================================= -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-main">PANVI</span>
+        <span class="brand-sub">CHRONICLES</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#youtube">YouTube</a></li>
+          <li class="nav-item"><a class="nav-link" href="#travel-lessons">Travel Lessons</a></li>
+        </ul>
+        <div class="nav-socials d-flex align-items-center gap-3">
+          <a href="https://www.instagram.com/panvi_chronicles?igsh=ZWFxZTZsYmQzejJ1" class="nav-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="nav-social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       HERO SECTION
+  ================================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg">
+      <img src="hero-img.png" alt="Cinematic travel landscape" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+
+        <!-- Left Content -->
+        <div class="col-lg-6 hero-left" data-animate="fade-up">
+          <div class="hero-label">CHRONICLES • ROADS • STORIES • ADVENTURES</div>
+          <h1 class="hero-heading">
+            Collect Moments<br />
+            <em>Not Things</em>
+          </h1>
+          <p class="hero-subheading">
+            We travel not to escape life,<br />but for life not to escape us.
+          </p>
+          <div class="hero-buttons d-flex flex-wrap gap-3">
+            <a href="#destinations" class="btn btn-primary-gold">
+              <span>Explore Our Journey</span>
+              <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#youtube" class="btn btn-outline-gold">
+              <i class="fas fa-play me-2"></i>
+              <span>Watch Our Adventures</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Illustration -->
+        <div class="col-lg-6 hero-right d-flex justify-content-center align-items-center" data-animate="fade-left">
+          <div class="hero-illustration-wrap">
+            <img src="us.jpeg" alt="Travel couple" class="hero-couple-img" />
+            <!-- Rotating Badge -->
+            <div class="hero-badge">
+              <svg viewBox="0 0 120 120" class="badge-svg">
+                <defs>
+                  <path id="circlePath" d="M60,60 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0" />
+                </defs>
+                <text class="badge-text">
+                  <textPath href="#circlePath">ROADS • STORIES • ADVENTURES • </textPath>
+                </text>
+              </svg>
+              <div class="badge-icon"><i class="fas fa-compass"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down -->
+    <div class="scroll-down">
+      <a href="#about">
+        <span class="scroll-label">Scroll</span>
+        <div class="scroll-line"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==============================
+       ABOUT SECTION
+  ================================= -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Polaroids -->
+        <div class="col-lg-5" data-animate="fade-right">
+          <div class="polaroid-stack">
+            <div class="polaroid polaroid-1">
+              <img src="Murudeswar.jpeg" alt="Travel memory 1" />
+              <p>Murudeswar</p>
+            </div>
+            <div class="polaroid polaroid-2">
+              <img src="Honnavar.jpeg" alt="Travel memory 2" />
+              <p>Honnavar</p>
+            </div>
+            <div class="polaroid polaroid-3">
+              <img src="kava.jpeg" alt="Travel memory 3" />
+              <p>Kava</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Text -->
+        <div class="col-lg-7" data-animate="fade-up">
+          <div class="section-eyebrow">OUR STORY</div>
+          <h2 class="section-title">
+            Welcome To<br />
+            <span class="gold-text">Panvi Chronicles</span>
+          </h2>
+          <div class="section-subtitle mb-3">Travel Couple from Kerala</div>
+          <p class="about-text">
+            We are passionate travelers exploring hidden gems, beautiful destinations, luxury stays, local food experiences, road trips, and unforgettable adventures across India. Every journey we take is a chapter waiting to be written — and this is where we share those stories.
+          </p>
+          <p class="about-text">
+            From the misty tea gardens of Munnar to the golden sands of Varkala, from silent forest paths in Wayanad to the shimmering backwaters of Alleppey — our chronicles are born on the road.
+          </p>
+          <div class="about-stats d-flex gap-4 my-4">
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Destinations Explored</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">500+</span>
+              <span class="stat-label">Travel Photos Captured</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Memories Collected</span>
+            </div>
+          </div>
+          <a href="#blogs" class="btn btn-primary-gold">
+            Read Our Story <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       DESTINATIONS SECTION
+  ================================= -->
+  <section class="destinations-section section-padding dark-section" id="destinations">
+    <div class="container">
+      <div class="text-center mb-5" data-animate="fade-up">
+        <div class="section-eyebrow light">OUR FAVOURITE SPOTS</div>
+        <h2 class="section-title light">Where We've <em>Been</em></h2>
+        <p class="section-desc light">Explore our favourite destinations across Kerala and beyond</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- murudeswar -->
+        <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="0">
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="murudeswar1.png" alt="Murudeswar" />
+              <div class="dest-overlay"></div>
+              <div class="dest-info">
+                <span class="dest-state">Karnataka</span>
+                <h3 class="dest-name">Murudeswar</h3>
+                <a href="#" class="dest-link"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Honnavar -->
+        <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="honnavar1.png" alt="honnar" />
+              <div class="dest-overlay"></div>
+              <div class="dest-info">
+                <span class="dest-state">Karnataka</span>
+                <h3 class="dest-name">Honnavar</h3>
+                <a href="#" class="dest-link"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- kava -->
+        <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="kava1.png" alt="kava" />
+              <div class="dest-overlay"></div>
+              <div class="dest-info">
+                <span class="dest-state">Kerala</span>
+                <h3 class="dest-name">Kava</h3>
+                <a href="#" class="dest-link"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- gokarna -->
+        <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="0">
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="gokarna.png" alt="gokarna" />
+              <div class="dest-overlay"></div>
+              <div class="dest-info">
+                <span class="dest-state">Karnataka</span>
+                <h3 class="dest-name">Gokarna</h3>
+                <a href="#" class="dest-link"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Athirappilly -->
+        <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="athirappally.png" alt="Athirappilly" />
+              <div class="dest-overlay"></div>
+              <div class="dest-info">
+                <span class="dest-state">Kerala</span>
+                <h3 class="dest-name">Athirappilly</h3>
+                <a href="#" class="dest-link"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Yana caves -->
+        <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="yana caves.jpeg" alt="yana caves" />
+              <div class="dest-overlay"></div>
+              <div class="dest-info">
+                <span class="dest-state">Western Ghats of Karnataka</span>
+                <h3 class="dest-name">Yana Caves</h3>
+                <a href="#" class="dest-link"><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-animate="fade-up">
+        <a href="#" class="btn btn-primary-gold">View All Destinations <i class="fas fa-map-marked-alt ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+<!-- ==============================
+     BLOG SECTION
+================================= -->
+<section class="blog-section section-padding" id="blogs">
+  <div class="container">
+
+    <div class="text-center mb-5" data-animate="fade-up">
+      <div class="section-eyebrow">FROM THE JOURNAL</div>
+      <h2 class="section-title">Latest Travel <em>Stories</em></h2>
+      <p class="section-desc">Stories, adventures, and unforgettable memories from our journeys.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Blog 1 -->
+      <div class="col-lg-4 col-md-6" data-animate="fade-up">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="honnavar1.png" alt="Honnavar Backwaters">
+            <span class="blog-category">Backwater Journey</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <i class="fas fa-calendar-alt me-2"></i>June 15, 2026
+            </div>
+            <h3 class="blog-title">Through The Emerald Waters Of Honnavar</h3>
+            <p class="blog-excerpt">
+              Cruising through serene backwaters lined with coconut trees and discovering hidden corners of Karnataka's coastal paradise.
+            </p>
+            <a href="story.html?id=0" class="blog-read-more">
+              Read Story <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="kava2.png" alt="Kava Island">
+            <span class="blog-category">Mountain Escape</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <i class="fas fa-calendar-alt me-2"></i>May 28, 2026
+            </div>
+            <h3 class="blog-title">Discovering Kava Island, Palakkad</h3>
+            <p class="blog-excerpt">
+              Rolling green hills, mist-covered landscapes, and breathtaking viewpoints make this hidden gem unforgettable.
+            </p>
+            <a href="story.html?id=1" class="blog-read-more">
+              Read Story <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="gokarna.png" alt="Gokarna">
+            <span class="blog-category">Beach Adventure</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <i class="fas fa-calendar-alt me-2"></i>April 18, 2026
+            </div>
+            <h3 class="blog-title">Sunset Trails In Gokarna</h3>
+            <p class="blog-excerpt">
+              A coastal trek through secluded beaches, dramatic cliffs, and magical sunsets along the Arabian Sea.
+            </p>
+            <a href="story.html" class="blog-read-more">
+              Read Story <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Blog 4 -->
+<div class="col-lg-4 col-md-6" data-animate="fade-up">
+  <article class="blog-card">
+    <div class="blog-img-wrap">
+      <img src="mirjan fort.jpeg" alt="Mirjan Fort">
+      <span class="blog-category">Heritage Trail</span>
+    </div>
+    <div class="blog-body">
+      <div class="blog-meta">
+        <i class="fas fa-calendar-alt me-2"></i>March 30, 2026
+      </div>
+      <h3 class="blog-title">Exploring The Mystical Mirjan Fort</h3>
+      <p class="blog-excerpt">
+        Walking through the ancient laterite walls, secret passages, and rich history of Karnataka's hidden architectural gem.
+      </p>
+      <a href="story.html" class="blog-read-more">
+        Read Story <i class="fas fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+
+      <!-- Blog 5 -->
+      <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="yana caves.jpeg" alt="Yana Caves">
+            <span class="blog-category">Trekking Trail</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <i class="fas fa-calendar-alt me-2"></i>February 12, 2026
+            </div>
+            <h3 class="blog-title">Exploring The Mysteries Of Yana</h3>
+            <p class="blog-excerpt">
+              Towering black limestone formations, dense forests, and one of Karnataka's most unique trekking experiences.
+            </p>
+            <a href="story.html" class="blog-read-more">
+              Read Story <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Blog 6 -->
+      <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="couple.png" alt="Panvi Chronicles" style="width: 100%;
+                                                                height: 260px;
+                                                                object-fit: cover;
+                                                                object-position: center 15%;">
+            <span class="blog-category">Travel Diary</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <i class="fas fa-calendar-alt me-2"></i>January 05, 2026
+            </div>
+            <h3 class="blog-title">Why We Started Panvi Chronicles</h3>
+            <p class="blog-excerpt">
+              The story behind our journeys, our passion for exploring hidden destinations, and the memories we collect along the way.
+            </p>
+            <a href="#" class="blog-read-more">
+              Read Story <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ==============================
+       INSTAGRAM / GALLERY SECTION
+  ================================= -->
+  <section class="gallery-section section-padding dark-section" id="gallery">
+    <div class="container">
+      <div class="text-center mb-5" data-animate="fade-up">
+        <div class="section-eyebrow light">@PANVICHRONICLES</div>
+        <h2 class="section-title light">Instagram <em>Feed</em></h2>
+        <p class="section-desc light">Moments captured, stories told through frames</p>
+      </div>
+
+      <div class="masonry-gallery" data-animate="fade-up">
+        <div class="masonry-item">
+          <img src="yana1.jpeg" alt="Travel 1" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item tall">
+          <img src="yana2.jpeg" alt="Travel 2" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item">
+          <img src="temple.jpeg" alt="Travel 3" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item tall">
+          <img src="Honnavar2.jpeg" alt="Travel 4" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item">
+          <img src="temple1.jpeg" alt="Travel 5" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item tall">
+          <img src="yana3.jpeg" alt="Travel 6" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item tall">
+          <img src="Honnavar.jpeg" alt="Travel 7" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item">
+          <img src="mirjan fort.jpeg" alt="Travel 8" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item tall">
+          <img src="gokarna1.jpeg" alt="Travel 9" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item">
+          <img src="gokarna1.jpeg" alt="Travel 9" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item tall">
+          <img src="Murudeswar.jpeg" alt="Travel 10" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="masonry-item">
+          <img src="temple3.jpeg" alt="Travel 10" />
+          <div class="masonry-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-animate="fade-up">
+        <a href="https://www.instagram.com/panvi_chronicles?igsh=ZWFxZTZsYmQzejJ1" class="btn btn-primary-gold">
+          <i class="fab fa-instagram me-2"></i> Follow On Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       YOUTUBE SECTION
+  ================================= -->
+  <section class="youtube-section section-padding" id="youtube">
+  <div class="container">
+
+    <div class="text-center mb-5" data-animate="fade-up">
+      <div class="section-eyebrow">ON THE SCREEN</div>
+      <h2 class="section-title">Watch Our <em>Adventures</em></h2>
+      <p class="section-desc">
+        Stories, mini vlogs and beautiful moments from our journeys.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Video 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="video-card">
+          <a href="https://youtube.com/shorts/ac2AcqZrF5I"
+             target="_blank"
+             class="text-decoration-none text-reset">
+
+            <div class="video-thumb-wrap">
+              <img src="https://img.youtube.com/vi/ac2AcqZrF5I/maxresdefault.jpg"
+                   alt="Travel Short">
+
+              <div class="video-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+
+              <span class="video-duration">0:58</span>
+            </div>
+
+            <div class="video-info">
+              <span class="video-tag">Travel Short</span>
+              <h3 class="video-title">
+                Exploring Kerala's Hidden Beauty
+              </h3>
+              <p class="video-views">
+                <i class="fas fa-eye me-1"></i>
+                Watch on YouTube
+              </p>
+            </div>
+
+          </a>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="video-card">
+          <a href="https://youtube.com/shorts/TiTu19Z4WE4"
+             target="_blank"
+             class="text-decoration-none text-reset">
+
+            <div class="video-thumb-wrap">
+              <img src="https://img.youtube.com/vi/TiTu19Z4WE4/maxresdefault.jpg"
+                   alt="Sunday Mini Vlog">
+
+              <div class="video-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+
+              <span class="video-duration">0:59</span>
+            </div>
+
+            <div class="video-info">
+              <span class="video-tag">Mini Vlog</span>
+              <h3 class="video-title">
+                Sunday Mini Vlog — Friend's Engagement Day
+              </h3>
+              <p class="video-views">
+                <i class="fas fa-eye me-1"></i>
+                Watch on YouTube
+              </p>
+            </div>
+
+          </a>
+        </div>
+      </div>
+
+      <!-- Channel Card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="video-card channel-card">
+
+          <div class="channel-content text-center">
+
+            <i class="fab fa-youtube channel-icon"></i>
+
+            <h3 class="video-title mt-3">
+              Panvi Chronicles
+            </h3>
+
+            <p class="mb-4">
+              Join us as we explore hidden gems, road trips,
+              travel stories and unforgettable moments.
+            </p>
+
+            <a href="https://youtube.com/@panvichronicles"
+               target="_blank"
+               class="btn btn-outline-gold" style="color:goldenrod;">
+              Visit Channel
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ==============================
+       why we started
+  ================================= -->
+  <section class="about-journey section-padding dark-section">
+
+  <div class="container text-center">
+
+    <div class="section-eyebrow light">
+      OUR PURPOSE
+    </div>
+
+    <h2 class="section-title light">
+      Why We Started <em>Panvi Chronicles</em>
+    </h2>
+
+    <p class="section-desc light mx-auto" style="max-width:800px;">
+      Panvi Chronicles was born from a simple dream —
+      to document our travels, share hidden destinations,
+      inspire fellow travelers, and preserve memories from every road we take.
+      What started as weekend adventures has become a journey of storytelling,
+      photography, and exploration.
+    </p>
+
+  </div>
+
+</section>
+
+
+  <!-- ==============================
+     TRAVEL LESSONS SECTION
+================================= -->
+<section class="travel-lessons section-padding" id="travel-lessons">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-eyebrow">THINGS WE LEARNED THE HARD WAY</div>
+      <h2 class="section-title">
+        Travel <em>Lessons</em>
+      </h2>
+      <p class="section-desc">
+        Every trip teaches us something... sometimes the funny way.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="lesson-card">
+          <div class="lesson-icon">
+            <i class="fas fa-shoe-prints"></i>
+          </div>
+          <p>Never wear white shoes on a rainy trip.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="lesson-card">
+          <div class="lesson-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <p>One photo = 37 retakes.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="lesson-card">
+          <div class="lesson-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <p>"Nearby" is a very relative term.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="lesson-card">
+          <div class="lesson-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <p>Hunger starts exactly when the restaurant closes.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="lesson-card">
+          <div class="lesson-icon">
+            <i class="fas fa-route"></i>
+          </div>
+          <p>Every trip needs one unplanned adventure.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="lesson-card">
+          <div class="lesson-icon">
+            <i class="fas fa-battery-quarter"></i>
+          </div>
+          <p>Your phone battery always dies at the best viewpoint.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ==============================
+       FOOTER
+  ================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top row g-5">
+        <!-- About -->
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="brand-main">PANVI</span>
+            <span class="brand-sub">CHRONICLES</span>
+          </div>
+          <p class="footer-about">
+            Panvi Chronicles is a travel journal capturing road trips,
+            hidden gems, coastal escapes, and unforgettable adventures
+            across India—one story at a time.
+          </p>
+
+          <div class="footer-tagline">
+            Explore • Capture • Inspire
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#travel-lessons">Travel Lessons</a></li>
+          </ul>
+        </div>
+
+     
+        <!-- Destinations -->
+        <div class="col-lg-2 col-6">
+          <h5 class="footer-heading">Recent Adventures</h5>
+          <ul class="footer-links">
+            <li><a href="#">Honnavar</a></li>
+            <li><a href="#">Murudeshwar</a></li>
+            <li><a href="#">Yana Caves</a></li>
+            <li><a href="#">Mirjan Fort</a></li>
+            <li><a href="#">Gokarna</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+      <div class="col-lg-4">
+        <h5 class="footer-heading">Follow The Journey</h5>
+
+        <p class="footer-about mb-4">
+          Join us on Instagram and YouTube for travel stories,
+          mini vlogs, hidden gems and unforgettable adventures.
+        </p>
+
+        <div class="footer-social-grid">
+
+          <a href="https://www.instagram.com/panvi_chronicles/"
+            target="_blank"
+            class="footer-social instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://youtube.com/@panvichronicles"
+            target="_blank"
+            class="footer-social youtube">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+
+        </div>
+      </div>
+
+<div class="footer-bottom">
+
+    <div class="footer-credit-wrap">
+
+        <p class="crafted-text">
+            Crafted with <i class="fas fa-heart"></i> by
+        </p>
+
+        <a href="https://ankwebstudio.in"
+           target="_blank"
+           class="footer-credit">
+
+            <img src="ANK LOGO.png"
+                 alt="Ank Web Studio"
+                 class="footer-logo">
+
+        </a>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="copyright-text">
+    Every journey tells a story <i class="fas fa-paper-plane"></i> <br>
+    © 2026 Panvi Chronicles. All Rights Reserved.
+</p>
+
+    <div class="footer-links-bottom">
+        <span><i class="fas fa-map-marker-alt"></i>  Kerala, India</span>
+        <span>•</span>
+        <span>Travel • Stories • Adventures</span>
+    </div>
+
+</div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panvi Chronicles Stories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('hero-img.png');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+min-height:100vh;
+padding:40px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* View Transition */
+
+@view-transition{
+navigation:auto;
+}
+
+/* Card */
+
+.story-card{
+width:100%;
+max-width:1300px;
+display:grid;
+grid-template-columns:45% 55%;
+overflow:hidden;
+border-radius:30px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+/* Left */
+
+.image-wrapper{
+height:850px;
+overflow:hidden;
+}
+
+.image-wrapper img{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+transition:.5s;
+}
+
+/* Right */
+
+.story-content{
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+color:white;
+}
+
+.story-tag{
+display:inline-block;
+background:#D89A43;
+padding:10px 22px;
+border-radius:50px;
+font-size:.8rem;
+font-weight:600;
+letter-spacing:2px;
+margin-bottom:25px;
+width:max-content;
+}
+
+#storyTitle{
+font-family:'Playfair Display',serif;
+font-size:3rem;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.story-meta{
+margin-bottom:25px;
+color:#d89a43;
+font-size:.95rem;
+}
+
+.story-text{
+font-size:1.08rem;
+line-height:1.9;
+color:#f1f1f1;
+white-space:pre-line;
+text-align:justify;
+max-height:450px;
+overflow-y:auto;
+padding-right:12px;
+}
+
+.story-text::-webkit-scrollbar{
+width:6px;
+}
+
+.story-text::-webkit-scrollbar-thumb{
+background:#D89A43;
+border-radius:20px;
+}
+
+/* Progress */
+
+.progress{
+height:6px;
+background:rgba(255,255,255,.12);
+border-radius:30px;
+margin-top:25px;
+overflow:hidden;
+}
+
+.progress-fill{
+height:100%;
+background:#D89A43;
+width:25%;
+transition:.4s;
+}
+
+/* Counter */
+
+.story-counter{
+margin-top:15px;
+color:#d89a43;
+font-weight:600;
+}
+
+/* Buttons */
+
+.story-actions{
+display:flex;
+gap:15px;
+margin-top:35px;
+}
+
+.btn{
+border:none;
+cursor:pointer;
+padding:15px 30px;
+border-radius:50px;
+font-size:1rem;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.btn-prev{
+background:rgba(255,255,255,.15);
+color:white;
+}
+
+.btn-next{
+background:#D89A43;
+color:white;
+}
+
+.home-btn{
+margin-top:20px;
+display:inline-block;
+color:white;
+text-decoration:none;
+}
+
+/* Animation */
+
+.fade{
+animation:fade .5s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.story-card{
+grid-template-columns:1fr;
+}
+
+.image-wrapper{
+height:350px;
+}
+
+.story-content{
+padding:30px;
+}
+
+#storyTitle{
+font-size:2rem;
+}
+
+.story-text{
+max-height:none;
+overflow:visible;
+}
+
+.story-actions{
+flex-direction:column;
+}
+
+.btn{
+width:100%;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="story-card fade">
+
+<div class="image-wrapper">
+<img id="storyImage" src="">
+</div>
+
+<div class="story-content">
+
+<span class="story-tag">
+PANVI CHRONICLES
+</span>
+
+<h1 id="storyTitle"></h1>
+
+<div class="story-meta">
+Travel Journal • Adventure Story
+</div>
+
+<div id="storyContent" class="story-text"></div>
+
+<div class="story-counter">
+Story <span id="currentNum">1</span> of
+<span id="totalNum">4</span>
+</div>
+
+<div class="progress">
+<div class="progress-fill" id="progressFill"></div>
+</div>
+
+<div class="story-actions">
+
+<button class="btn btn-prev" id="prevBtn">
+← Previous
+</button>
+
+<button class="btn btn-next" id="nextBtn">
+Next Story →
+</button>
+
+</div>
+
+<a href="index.html" class="home-btn">
+← Back To Home
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+const stories = [
+
+{
+title:"Discovering Kava Island, Palakkad",
+image:"kava.jpeg",
+content:`
+
+Kava is one of Kerala's most underrated destinations.
+
+Nestled near the foothills of the Western Ghats, this hidden paradise offers rolling green hills, cool winds, and breathtaking views that stretch endlessly toward the horizon.
+
+We arrived just after sunrise when a thin layer of mist covered the valley. The entire landscape looked untouched, almost like a scene from Island, which is how the place earned its nickname.
+
+Walking through the grass-covered slopes felt incredibly peaceful. There were no crowds, no noise, just nature in its purest form.
+
+As the morning sun slowly illuminated the hills, different shades of green appeared across the landscape, creating a mesmerizing view.
+
+Travel Tips:
+
+• Visit during monsoon or immediately after.
+• Reach early morning for misty views.
+• Carry water and a camera.
+• Perfect for drone photography.
+
+Kava is proof that some of the most beautiful places remain hidden from the mainstream tourist trail.
+
+`
+},
+
+{
+title:"Sunset Trails In Gokarna",
+image:"gokarna.png",
+content:`
+
+Gokarna combines adventure, spirituality and coastal beauty in a way few destinations can.
+
+Our journey began at Kudle Beach before heading toward the famous coastal trail leading to Om Beach.
+
+The path winds along dramatic cliffs overlooking the Arabian Sea.
+
+At every turn we discovered hidden viewpoints, secluded beaches, and small cafes perched on the hillside.
+
+As evening approached, the sky transformed into orange and pink hues while waves crashed below.
+
+Watching the sunset from the cliff edge became one of the most memorable moments of our trip.
+
+Travel Tips:
+
+• Begin trek before 4 PM.
+• Carry water and sunscreen.
+• Stay until sunset.
+• Visit Om Beach and Half Moon Beach.
+
+The Gokarna trek is easily one of the most beautiful coastal experiences in India.
+
+`
+},
+
+{
+title:"Exploring Yana Caves",
+image:"yana caves.jpeg",
+content:`
+
+Deep inside Karnataka's forests stand the legendary Yana Rocks.
+
+These giant black limestone formations rise dramatically from the jungle floor and create an atmosphere unlike anywhere else.
+
+The trek through dense forest is relatively easy and incredibly scenic.
+
+Sunlight filters through the trees while birds and insects create a natural soundtrack.
+
+As we approached the towering formations, their sheer scale left us speechless.
+
+Yana is a perfect destination for trekkers, photographers and nature lovers.
+
+Travel Tips:
+
+• Best visited after monsoon.
+• Wear trekking shoes.
+• Carry drinking water.
+• Reach early to avoid crowds.
+
+The mystical beauty of Yana makes it one of Karnataka's hidden treasures.
+
+`
+},
+
+{
+title:"Exploring The Mystical Mirjan Fort",
+image:"mirijan fort2.jpeg",
+content:`
+
+Mirjan Fort is one of Karnataka's most fascinating historical sites.
+
+Built with laterite stone and surrounded by lush greenery, the fort feels frozen in time.
+
+Walking through the massive gateways and secret pathways reveals stories of ancient kingdoms and maritime trade.
+
+Every wall carries traces of centuries of history.
+
+The fort is especially beautiful during monsoon when moss and greenery cover the red stone architecture.
+
+Travel Tips:
+
+• Visit early morning.
+• Explore all watchtowers.
+• Carry a camera.
+• Ideal during monsoon season.
+
+Mirjan Fort perfectly combines history, architecture and natural beauty.
+
+`
+}
+
+];
+
+let current = 0;
+
+const title = document.getElementById("storyTitle");
+const image = document.getElementById("storyImage");
+const content = document.getElementById("storyContent");
+const progress = document.getElementById("progressFill");
+const currentNum = document.getElementById("currentNum");
+
+document.getElementById("totalNum").innerText = stories.length;
+
+function loadStory(index){
+
+document.querySelector(".story-card").classList.remove("fade");
+
+void document.querySelector(".story-card").offsetWidth;
+
+document.querySelector(".story-card").classList.add("fade");
+
+title.innerText = stories[index].title;
+image.src = stories[index].image;
+content.innerHTML = stories[index].content;
+
+currentNum.innerText = index + 1;
+
+progress.style.width =
+((index+1)/stories.length*100) + "%";
+}
+
+loadStory(current);
+
+document.getElementById("nextBtn").onclick=()=>{
+
+current++;
+
+if(current>=stories.length){
+current=0;
+}
+
+loadStory(current);
+
+}
+
+document.getElementById("prevBtn").onclick=()=>{
+
+current--;
+
+if(current<0){
+current=stories.length-1;
+}
+
+loadStory(current);
+
+}
+
+</script>
+
+</body>
+</html>
